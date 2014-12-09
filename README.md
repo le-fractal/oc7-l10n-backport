@@ -37,7 +37,7 @@ If the script finds any translations that have changed between oc7 and oc8 (mast
 
 For example if I run it for the 'de' language (German), here's the output :
 
-``
+```
 > File /home/zinks/src/core7c/settings/l10n/de.php line 122
 -- "Use system's cron service to call the cron.php file every 15 minutes." => "Benutze den System-Crondienst um die cron.php alle 15 Minuten aufzurufen.",
 ++ "Use system's cron service to call the cron.php file every 15 minutes." => "Benutzen Sie den System-Crondienst, um die cron.php alle 15 Minuten aufzurufen.",
@@ -71,7 +71,7 @@ For example if I run it for the 'de' language (German), here's the output :
 
 ===
 10 strings have been found and patched
-``
+```
 
 Don't be fooled by the fact that the script tells you at the end that it has patched anything. It hasn't because we didn't use the 'write' parameter when we called the script.
 
@@ -83,7 +83,7 @@ Commit the updated files and push them to your github forks using patchstable7.s
 ---------------------------------------------------------------------------------
 
 1. Open `patch7stable.sh` with your text editor
-2. Set `branch_name` to a nme you chose for your new branch: the one that will hold the updates. I recommend `l10n-<language code>-backport`
+2. Set `branch_name` to a name you chose for your new branch: the one that will hold the updates. I recommend `l10n-<language code>-backport`
 2. Set `commit_comment` to what you want the... commit comment to be.
 3. Set `patched_dir` to the path of the directory that hold the stable7 code we just patched. It's again the same directory we encountered in the two other files' variables.
 4. Execute `bash patchstable7.sh`. It will push all your changes to your forks.
@@ -93,4 +93,4 @@ Commit the updated files and push them to your github forks using patchstable7.s
 Make Pull Requests
 ------------------
 
-On github and fo reach repository, compare ownCloud's stable7 branch with your fork's l10n-xx-backport (or whatever you called it) branch and make a pull request.
+On github and for each repository, compare ownCloud's stable7 branch with your fork's l10n-xx-backport (or whatever you called it) branch and make a pull request.
