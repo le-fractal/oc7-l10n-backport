@@ -31,9 +31,10 @@ Using backporter.php to patch translations
 6. Execute `php backporter.php` **Note:** nothing will be written to disk unless you pass the 'write' argument to the script. This is a dry-run test.
 
 If the script finds any translations that have changed between oc7 and oc8 (master), it will output for each of them:
-1. > The file where the original translation was found
-2. -- The old translation (the one in oc7)
-3. ++ The new translation (the one in oc8/master)
+
+1. ``> The file where the original translation was found``
+2. ``-- The old translation (the one in oc7)``
+3. ``++ The new translation (the one in oc8/master)``
 
 For example if I run it for the 'de' language (German), here's the output :
 
