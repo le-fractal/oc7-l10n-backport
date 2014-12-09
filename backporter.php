@@ -47,7 +47,6 @@ function buildJsonFilePath($phpFile, $language) {
 }
 
 // Escape strings
-// This is a bit flimsy as some apps have different escaping requirements
 function esc_($string) {
 	return addcslashes(str_replace("\n", '\\n', $string), '$');
 }
